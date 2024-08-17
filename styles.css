@@ -1,0 +1,123 @@
+body{
+    font-family: Arial;
+    background-color: azure;
+    padding-left:30px;
+    padding-right:30px;
+ 
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 26px;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.tools{
+    background-color: white;
+}
+.home{
+    display:flex;
+}
+#Contacts{
+    display:flex;
+
+}
+.certifications{
+   height:280px;
+   width:400px;
+   display: flex;
+
+}
+.logos{
+    height: 32px;
+    width:40px;
+    margin:20px
+}
+#footer{
+    text-align: center;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation Bar Logo */
+  .navbar-logo {
+    height: 50px;
+    width:100px
+  }
+  
+  /* Navigation Bar Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover and Active Effects */
+  .navbar-links a:hover,
+  .navbar-links a:focus {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-links a {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .more-content {
+    display: none;
+}
+
+.read-more-button {
+    color: blue;
+    cursor: pointer;
+}
+
+.show-more:checked ~ .more-content {
+    display: inline;
+}
+
+.show-more:checked ~ .read-more-button::before {
+    content: "Read Less";
+}
+
+.read-more-button::before {
+    content: "Read More";
+}
+  
